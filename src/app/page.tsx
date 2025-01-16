@@ -3,6 +3,7 @@ import Head from "next/head";
 
 import { Header } from "@/components/Header";
 import { TrySection } from "@/components/TrySection";
+import { FeaturedSection } from "@/components/FeaturedSection";
 
 import "@/styles/reset.css";
 
@@ -21,6 +22,7 @@ export default function Home() {
         <MarqueeHeader />
         <Header />
         <TrySection />
+        <FeaturedSection />
       </main>
     </>
   );

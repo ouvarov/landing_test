@@ -50,11 +50,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 18px;
 }
 
 .trustpilot {
   width: 105px;
-  margin-bottom: 18px;
 }
 
 .title {
@@ -98,6 +98,11 @@
 
 .list {
   margin-bottom: 24px;
+}
+
+.wrapper {
+  max-width: 420px;
+  margin: 0 auto;
 }
 
 .button {
