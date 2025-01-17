@@ -7,8 +7,10 @@ import { ReviewsSection } from "@/components/ReviewsSection";
 import { FeaturedSection } from "@/components/FeaturedSection";
 import { BenefitsSection } from "@/components/BenefitsSection";
 import { WellnessSection } from "@/components/WellnessSection";
+import { MarqueeSection } from "@/components/MarqueeSection";
 
 import "@/styles/reset.css";
+import { ScoopSection } from "@/components/ScoopSection";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -27,6 +29,9 @@ export default function Home() {
         <ReviewsSection />
         <BenefitsSection />
         <WellnessSection />
+        {/*saleSection*/}
+        <MarqueeSection />
+        <ScoopSection />
       </main>
     </>
   );

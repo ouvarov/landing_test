@@ -1,0 +1,71 @@
+.wrapper {
+  :global(.slick-list) {
+    padding: 0 !important;
+  }
+
+  :global(.slick-track) {
+    display: flex;
+    padding: 0 18px;
+  }
+}
+
+.figure {
+  height: 100%;
+}
+
+.footer {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.5) 100%);
+  padding: 38px 36px 18px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.title {
+  position: relative;
+  color: #fff;
+  font-family: "Gilroy-SemiBold", serif;
+  font-size: 28px;
+  line-height: 33px;
+  text-align: center;
+  margin-bottom: 6px;
+}
+
+.text {
+  position: relative;
+  color: #fff;
+  font-family: "Gilroy-SemiBold", serif;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+}
+
+.loader {
+  $indent: 18px;
+
+  background-color: #F3E9DD;
+  width: calc(100% - (#{$indent} * 2) );
+  height: 5px;
+  position: relative;
+  margin: 21px $indent 0;
+}
+
+.loader_item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: #C10F27;
+  transition: .3s;
+}
+
+.card {
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+  width: 278px !important;
+  height: 361px;
+  margin: 0 6px;
+}

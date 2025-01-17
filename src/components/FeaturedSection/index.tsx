@@ -1,5 +1,3 @@
-import Marquee from "react-fast-marquee";
-
 import Forbes from "@/assets/icons/forbesIcon.svg";
 import Vector from "@/assets/icons/vectorImg.svg";
 import Image from "next/image";
@@ -11,14 +9,35 @@ const FeaturedSection = () => (
     <div className={styles.title_wrap}>
       <h2 className={styles.title}>FEATURED ON</h2>
     </div>
-    <Marquee speed={50}>
-      <figure>
+    <div className={styles.figure_wrap}>
+      <figure className={styles.figure}>
         <Image src={Forbes} alt="" />
       </figure>
-      <figure>
+      <figure className={styles.figure}>
         <Image src={Vector} alt="" />
       </figure>
-    </Marquee>
+      <figure className={styles.figure}>
+        <Image src={Forbes} alt="" />
+      </figure>
+      <figure className={styles.figure}>
+        <Image src={Vector} alt="" />
+      </figure>
+      <figure className={styles.figure}>
+        <Image src={Forbes} alt="" />
+      </figure>
+      <figure className={styles.figure}>
+        <Image src={Vector} alt="" />
+      </figure>
+      <figure className={styles.figure}>
+        <Image src={Forbes} alt="" />
+      </figure>
+      <figure className={styles.figure}>
+        <Image src={Vector} alt="" />
+      </figure>
+      <figure className={styles.figure}>
+        <Image src={Vector} alt="" />
+      </figure>
+    </div>
     <div className={styles.separator} />
   </section>
 );

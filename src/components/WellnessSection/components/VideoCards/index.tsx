@@ -12,7 +12,6 @@ const VideoCards = () => {
     dots: false,
     infinite: false,
     speed: 500,
-    centerMode: true,
     arrows: false,
     slidesToScroll: 1,
     variableWidth: true,

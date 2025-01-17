@@ -3,6 +3,7 @@
   padding: 20px 0;
   width: 100%;
   overflow: hidden;
+  position: relative;
 }
 
 .title {
@@ -18,11 +19,25 @@
   padding: 0 15px;
 }
 
+.figure_wrap {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: auto;
+}
+
+.figure {
+  width: 120px;
+  flex-shrink: 0;
+}
+
 .separator {
-  margin: 0 18px;
-  width: 100%;
+  width: calc(100% - (18px * 2));
   height: 1px;
   background-color: #fff;
+  position: absolute;
+  left: 18px;
+  bottom: 20px;
 }
 
 .title_wrap {
