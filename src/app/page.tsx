@@ -1,17 +1,19 @@
+import { Roboto } from "next/font/google";
+
 import { MarqueeHeader } from "@/components/MarqueeHeader";
 import { Header } from "@/components/Header";
 import { TrySection } from "@/components/TrySection";
 import { ReviewsSection } from "@/components/ReviewsSection";
 import { FeaturedSection } from "@/components/FeaturedSection";
-import { Roboto } from "next/font/google";
+import { BenefitsSection } from "@/components/BenefitsSection";
+import { WellnessSection } from "@/components/WellnessSection";
 
 import "@/styles/reset.css";
 
-// Move the Roboto font loader to the module scope
 const roboto = Roboto({
-  subsets: ["latin"], // Include the subset(s) you need
-  weight: ["400", "700"], // Specify the font weights
-  variable: "--font-roboto", // Add a CSS variable for custom usage
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-roboto",
 });
 
 export default function Home() {
@@ -23,6 +25,8 @@ export default function Home() {
         <TrySection />
         <FeaturedSection />
         <ReviewsSection />
+        <BenefitsSection />
+        <WellnessSection />
       </main>
     </>
   );

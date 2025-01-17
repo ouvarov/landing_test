@@ -1,22 +1,8 @@
 .section {
   background-color: #F6EFE5;
   padding: 52px 0;
-
-  :global(.slick-list) {
-    padding: 0 !important;
-  }
-
-  :global(.slick-track) {
-    display: flex;
-    padding: 0 18px;
-  }
 }
 
-.quotation_marks {
-  width: 34px;
-  height: 30px;
-  margin-bottom: 10px;
-}
 
 .wrapper {
   max-width: 420px;
@@ -43,54 +29,4 @@
   margin-bottom: 28px;
 }
 
-.card_title {
-  font-family: var(--font-roboto), sans-serif;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 26px;
-  margin-bottom: 10px;
-}
 
-.rating_wrap {
-  display: flex;
-  align-items: center;
-  margin-bottom: 13px;
-}
-
-.text {
-  font-family: var(--font-roboto), sans-serif;
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 22px;
-  margin-bottom: 21px;
-}
-
-.user_name {
-  font-family: var(--font-roboto), sans-serif;
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 22px;
-}
-
-.stars {
-  width: 106px;
-  height: 20px;
-  margin-bottom: 13px;
-}
-
-.rating_text {
-  font-family: var(--font-roboto), sans-serif;
-  font-size: 12px;
-  font-weight: 300;
-  line-height: 26px;
-}
-
-.card {
-  background-color: #fff;
-  border-radius: 10px;
-  padding: 30px 22px;
-  width: 260px !important;
-  min-height: 260px;
-  margin: calc(18px / 2);
-  box-sizing: border-box;
-}
