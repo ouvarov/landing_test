@@ -1,0 +1,41 @@
+.title {
+  font-family: "Gilroy-SemiBold", serif;
+  font-size: 18px;
+  line-height: 18px;
+  text-align: left;
+  padding-right: 60px;
+  position: relative;
+
+  &__active {
+    color: #C10F27;
+    margin-bottom: 18px;
+  }
+}
+
+.svg {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  transition: transform .3s;
+
+  &__active {
+    transform: translateY(-50%) rotate(180deg);
+  }
+}
+
+.text {
+  font-family: "Gilroy-Medium", serif;
+  font-size: 16px;
+  line-height: 16px;
+  color: #666666;
+}
+
+.item {
+  border: 2px solid #F3E9DD;
+  padding-bottom: 18px;
+
+  &:not(:last-of-type) {
+    margin-bottom: 18px;
+  }
+}

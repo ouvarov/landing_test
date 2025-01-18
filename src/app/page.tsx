@@ -1,18 +1,20 @@
 import { Roboto } from "next/font/google";
 
-import { MarqueeHeader } from "@/components/MarqueeHeader";
 import { Header } from "@/components/Header";
+import { AppSection } from "@/components/AppSection";
+import { FAQSection } from "@/components/FAQSection";
 import { TrySection } from "@/components/TrySection";
+import { ScoopSection } from "@/components/ScoopSection";
+import { MarqueeHeader } from "@/components/MarqueeHeader";
+import { MarqueeSection } from "@/components/MarqueeSection";
 import { ReviewsSection } from "@/components/ReviewsSection";
+import { GroundedSection } from "@/components/GroundedSection";
+import { HowWeAreSection } from "@/components/HowWeAreSection";
 import { FeaturedSection } from "@/components/FeaturedSection";
 import { BenefitsSection } from "@/components/BenefitsSection";
 import { WellnessSection } from "@/components/WellnessSection";
-import { MarqueeSection } from "@/components/MarqueeSection";
 
 import "@/styles/reset.css";
-import { ScoopSection } from "@/components/ScoopSection";
-import { GroundedSection } from "@/components/GroundedSection";
-import { HowWeAreSection } from "@/components/HowWeAreSection";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -36,6 +38,8 @@ export default function Home() {
         <ScoopSection />
         <GroundedSection />
         <HowWeAreSection />
+        <FAQSection />
+        <AppSection />
       </main>
     </>
   );
