@@ -4,9 +4,9 @@ import classNames from "classnames";
 
 import styles from "./accordion_item.module.scss";
 
-type Props = { title: string; text: string };
+type Props = { title: string; text: string; isBlack?: boolean };
 
-const AccordionItem: FC<Props> = ({ title, text }) => {
+const AccordionItem: FC<Props> = ({ title, text, isBlack }) => {
   const [isOpen, setIsOpen] = useState(false);
   const contentRef = useRef<HTMLDivElement>(null);
 
@@ -19,6 +19,7 @@ const AccordionItem: FC<Props> = ({ title, text }) => {
       <button
         className={classNames(styles.title, {
           [styles.title__active]: isOpen,
+          [styles.title__black]: isBlack,
         })}
         onClick={toggleAccordion}
       >
@@ -34,7 +35,7 @@ const AccordionItem: FC<Props> = ({ title, text }) => {
           viewBox="0 0 12 8"
         >
           <path
-            stroke={isOpen ? "#C10F27" : "#000"}
+            stroke={isOpen && !isBlack ? "#C10F27" : "#000"}
             strokeWidth="2"
             d="M11 1 6 6 1 1"
           />
@@ -42,7 +43,9 @@ const AccordionItem: FC<Props> = ({ title, text }) => {
       </button>
       <div
         ref={contentRef}
-        className={styles.text}
+        className={classNames(styles.text, {
+          [styles.text__black]: isBlack,
+        })}
         style={{
           height: isOpen ? `${contentRef.current?.scrollHeight}px` : "0",
           overflow: "hidden",
