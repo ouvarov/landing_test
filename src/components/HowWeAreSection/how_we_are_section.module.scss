@@ -1,0 +1,53 @@
+.img_mobile {
+  @media (min-width: 1440px) {
+    display: none;
+  }
+}
+
+.img_desktop {
+  @media (max-width: 1439px) {
+    display: none;
+  }
+}
+
+.section {
+  background-color: #F6EFE5;
+  padding: 52px 18px;
+}
+
+.wrapper {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.title {
+  font-family: "Mediasans-Bold", serif;
+  font-size: 32px;
+  line-height: 38px;
+  text-align: center;
+  margin-bottom: 12px;
+
+  span {
+    color: #C10F27;
+  }
+}
+
+.subtitle {
+  font-family: "Gilroy-SemiBold", serif;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  margin-bottom: 44px;
+}
+
+.figure {
+  width: 100%;
+  margin-bottom: 18px;
+}
+
+.text {
+  font-family: "Gilroy-SemiBold", serif;
+  font-size: 14px;
+  line-height: 17px;
+  color: #7F7F7F;
+}

@@ -11,6 +11,8 @@ import { MarqueeSection } from "@/components/MarqueeSection";
 
 import "@/styles/reset.css";
 import { ScoopSection } from "@/components/ScoopSection";
+import { GroundedSection } from "@/components/GroundedSection";
+import { HowWeAreSection } from "@/components/HowWeAreSection";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -32,6 +34,8 @@ export default function Home() {
         {/*saleSection*/}
         <MarqueeSection />
         <ScoopSection />
+        <GroundedSection />
+        <HowWeAreSection />
       </main>
     </>
   );
