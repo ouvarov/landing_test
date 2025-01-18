@@ -1,7 +1,7 @@
 import { FC } from "react";
 import Marquee from "react-fast-marquee";
 
-import icon from "./icon.svg";
+import icon from "@/assets/icons/icon.svg";
 import Image from "next/image";
 
 import styles from "./marquee_meader.module.scss";

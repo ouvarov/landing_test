@@ -1,5 +1,6 @@
 import { Roboto } from "next/font/google";
 
+import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
 import { AppSection } from "@/components/AppSection";
 import { FAQSection } from "@/components/FAQSection";
@@ -40,6 +41,7 @@ export default function Home() {
         <HowWeAreSection />
         <FAQSection />
         <AppSection />
+        <Footer />
       </main>
     </>
   );

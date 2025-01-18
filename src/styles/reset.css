@@ -19,6 +19,13 @@ body {
 }
 
 @font-face {
+    font-family: 'Gilroy-Regular';
+    src: url('/fonts/Gilroy-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
     font-family: 'Mediasans-Bold';
     src: url('/fonts/mediasans-bold.otf');
     font-weight: normal;

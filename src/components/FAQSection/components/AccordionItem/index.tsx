@@ -35,7 +35,7 @@ const AccordionItem: FC<Props> = ({ title, text }) => {
         >
           <path
             stroke={isOpen ? "#C10F27" : "#000"}
-            stroke-width="2"
+            strokeWidth="2"
             d="M11 1 6 6 1 1"
           />
         </svg>
