@@ -33,7 +33,7 @@ const UserCard: FC = () => {
   return (
     <>
       <div className={styles.wrapper}>
-        <Slider {...settings}>
+        <Slider className={styles.slider} {...settings}>
           <div className={styles.card}>
             <figure className={styles.figure}>
               <Image src={image1} alt="" />
@@ -68,6 +68,41 @@ const UserCard: FC = () => {
             </div>
           </div>
         </Slider>
+        <div className={styles.inner_wrap}>
+          <div className={styles.card}>
+            <figure className={styles.figure}>
+              <Image src={image1} alt="" />
+            </figure>
+            <div className={styles.footer}>
+              <p className={styles.title}>Scoop</p>
+              <p className={styles.text}>
+                Add 1 scoop to 8-10 oz of water or your favorite beverage
+              </p>
+            </div>
+          </div>
+          <div className={styles.card}>
+            <figure className={styles.figure}>
+              <Image src={image2} alt="" />
+            </figure>
+            <div className={styles.footer}>
+              <p className={styles.title}>Scoop</p>
+              <p className={styles.text}>
+                Add 1 scoop to 8-10 oz of water or your favorite beverage
+              </p>
+            </div>
+          </div>
+          <div className={styles.card}>
+            <figure className={styles.figure}>
+              <Image src={image3} alt="" />
+            </figure>
+            <div className={styles.footer}>
+              <p className={styles.title}>Scoop</p>
+              <p className={styles.text}>
+                Add 1 scoop to 8-10 oz of water or your favorite beverage
+              </p>
+            </div>
+          </div>
+        </div>
       </div>
       <div className={styles.loader}>
         <div

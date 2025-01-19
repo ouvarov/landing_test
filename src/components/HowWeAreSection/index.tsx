@@ -2,6 +2,7 @@ import Image from "next/image";
 
 import tabletImg from "./images/tablet.svg";
 import tabletDesktopImg from "./images/tablet_desktop.svg";
+import bg from "./images/bg.png";
 
 import styles from "./how_we_are_section.module.scss";
 
@@ -13,7 +14,7 @@ const HowWeAreSection = () => (
         <span>Different</span>
       </h2>
       <p className={styles.subtitle}>Trusted by over 50,000+ People</p>
-      <div>
+      <div className={styles.figure_wrap}>
         <figure className={styles.figure}>
           <Image className={styles.img_mobile} src={tabletImg} alt=" " />
           <Image
@@ -21,6 +22,9 @@ const HowWeAreSection = () => (
             src={tabletDesktopImg}
             alt=" "
           />
+        </figure>
+        <figure className={styles.figure_desktop}>
+          <Image src={bg} alt="" />
         </figure>
       </div>
       <p className={styles.text}>

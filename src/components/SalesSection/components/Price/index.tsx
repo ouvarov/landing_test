@@ -37,36 +37,36 @@ const Price: FC = () => {
           </p>
         </div>
         <p className={styles.subtitle}>1 bottle shipped every month</p>
-        <p className={styles.item}>
+        <div className={styles.item}>
           <figure className={styles.check}>
             <Image src={check} alt="" />
           </figure>
           <span>10% off </span> future deliveries
-        </p>
-        <p className={styles.item}>
+        </div>
+        <div className={styles.item}>
           <figure className={styles.check}>
             <Image src={check} alt="" />
           </figure>
           1 serving per day
-        </p>
-        <p className={styles.item}>
+        </div>
+        <div className={styles.item}>
           <figure className={styles.check}>
             <Image src={check} alt="" />
           </figure>
           Cancel ANYTIME.
-        </p>
-        <p className={styles.item}>
+        </div>
+        <div className={styles.item}>
           <figure className={styles.check}>
             <Image src={check} alt="" />
           </figure>
           <span>Free returns,</span> no question asked
-        </p>
-        <p className={styles.item}>
+        </div>
+        <div className={styles.item}>
           <figure className={styles.check}>
             <Image src={check} alt="" />
           </figure>
           Free shipping
-        </p>
+        </div>
       </button>
       <button
         type="button"

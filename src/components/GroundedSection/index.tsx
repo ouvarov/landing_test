@@ -18,7 +18,7 @@ const GroundedSection = () => (
             <Image src={mushroom} alt="" />
           </figure>
         </div>
-        <div>
+        <div className={styles.content_wrap}>
           <p className={styles.headline}>
             Amanita Muscaria: Nature’s Most Unique Ingredient
           </p>

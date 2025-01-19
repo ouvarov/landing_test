@@ -11,7 +11,10 @@ import Image from "next/image";
 const ScoopSection: FC = () => (
   <section className={styles.section}>
     <div className={styles.wrapper}>
-      <h2 className={styles.title}>Be Part of Our Wellness Tribe</h2>
+      <h2 className={styles.title}>
+        Be Part of Our
+        <br /> Wellness Tribe
+      </h2>
       <p className={styles.text}>Trusted by over 50,000+ People</p>
       <div className={styles.list}>
         <div className={styles.item}>
