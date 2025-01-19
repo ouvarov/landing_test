@@ -1,6 +1,10 @@
 .section {
   background-color: #F6EFE5;
   padding: 52px 0;
+
+  @media (min-width: 1440px) {
+    padding: 90px 0 130px;
+  }
 }
 
 .title {
@@ -12,6 +16,13 @@
   max-width: 300px;
   margin: 0 auto 11px;
   text-transform: uppercase;
+
+  @media (min-width: 1440px) {
+    max-width: 100%;
+    font-size: 62px;
+    line-height: 74px;
+    margin-bottom: 18px;
+  }
 }
 
 .text {
@@ -21,4 +32,10 @@
   line-height: 22px;
   text-align: center;
   margin-bottom: 26px;
+
+  @media (min-width: 1440px) {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 46px;
+  }
 }

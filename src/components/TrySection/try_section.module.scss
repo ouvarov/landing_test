@@ -7,30 +7,46 @@
   position: relative;
   max-width: 216px;
   margin: 0 auto 28px;
+
+  @media (min-width: 1440px) {
+    max-width: 100%;
+    margin: 0;
+  }
 }
 
 .image {
   width: 100%;
+
+  @media (min-width: 1440px) {
+    width: 492px;
+    height: 617px;
+  }
 }
 
-.tablet_2 {
-  width: 67px;
-  height: 67px;
+.tablet {
+  width: 87px;
+  height: 87px;
   position: absolute;
   bottom: 10px;
   right: -30px;
-}
 
-.tablet_1 {
-  position: absolute;
-  bottom: 10px;
-  right: -30px;
-  width: 82px;
-  height: 32px;
+  @media (min-width: 1440px) {
+    width: 205px;
+    height: 181px;
+    bottom: 0;
+    right: -60px;
+  }
+
 }
 
 .stars {
   max-width: 81px;
+
+  @media (min-width: 1440px) {
+    width: 137px;
+    height: 26px;
+    max-width: 100%;
+  }
 }
 
 .rating {
@@ -42,6 +58,10 @@
   strong {
     font-weight: 700;
   }
+
+  @media (min-width: 1440px) {
+    font-size: 20px;
+  }
 }
 
 .rating_wrap {
@@ -49,10 +69,18 @@
   align-items: center;
   justify-content: space-between;
   margin-bottom: 18px;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 35px;
+  }
 }
 
 .trustpilot {
   width: 105px;
+
+  @media (min-width: 1440px) {
+    width: 152px;
+  }
 }
 
 .title {
@@ -63,10 +91,14 @@
   text-transform: uppercase;
   margin-bottom: 14px;
 
-
   span {
     color: #C10F27;
+  }
 
+  @media (min-width: 1440px) {
+    font-size: 72px;
+    line-height: 86px;
+    margin-bottom: 18px;
   }
 }
 
@@ -76,6 +108,12 @@
   font-weight: 500;
   line-height: 21px;
   margin-bottom: 22px;
+
+  @media (min-width: 1440px) {
+    font-size: 24px;
+    line-height: 28px;
+    margin-bottom: 32px;
+  }
 }
 
 .check {
@@ -92,6 +130,11 @@
   font-weight: 500;
   line-height: 22px;
   margin-bottom: 9px;
+
+  @media (min-width: 1440px) {
+    font-size: 22px;
+    line-height: 26px;
+  }
 }
 
 .list {
@@ -101,6 +144,20 @@
 .wrapper {
   max-width: 420px;
   margin: 0 auto;
+
+  @media (min-width: 1440px) {
+    display: flex;
+    max-width: 100%;
+    padding: 40px 100px 100px;
+    flex-direction: row-reverse;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.inner_wrap {
+  max-width: 565px;
 }
 
 .button {
@@ -133,5 +190,11 @@
       background-color: #fff;
 
     }
+  }
+
+  @media (min-width: 1440px) {
+    min-height: 66px;
+    font-size: 24px;
+    line-height: 28px;
   }
 }

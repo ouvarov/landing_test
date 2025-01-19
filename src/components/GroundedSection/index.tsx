@@ -5,7 +5,7 @@ import mushroom from "./mushroom.png";
 import styles from "./grounded_section.module.scss";
 
 const GroundedSection = () => (
-  <section className={styles.section}>
+  <section className={styles.section} id="Science">
     <div className={styles.wrapper}>
       <h2 className={styles.title}>Grounded in Nature, Proven by Science</h2>
       <p className={styles.subtitle}>

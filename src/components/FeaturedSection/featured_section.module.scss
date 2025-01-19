@@ -4,6 +4,11 @@
   width: 100%;
   overflow: hidden;
   position: relative;
+
+
+  @media (min-width: 1440px) {
+    padding: 95px 0;
+  }
 }
 
 .title {
@@ -17,13 +22,21 @@
   z-index: 1;
   display: inline-block;
   padding: 0 15px;
+
+  @media (min-width: 1440px) {
+    font-size: 22px;
+    line-height: 26px;
+  }
 }
 
 .figure_wrap {
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: auto;
+
+  @media (min-width: 1440px) {
+    padding: 30px 0;
+  }
 }
 
 .figure {
@@ -38,6 +51,12 @@
   position: absolute;
   left: 18px;
   bottom: 20px;
+
+  @media (min-width: 1440px) {
+    bottom: 95px;
+    left: 100px;
+    width: calc(100% - (100px * 2));
+  }
 }
 
 .title_wrap {
@@ -56,5 +75,9 @@
     right: 0;
     top: 50%;
     transform: translateY(-50%);
+  }
+
+  @media (min-width: 1440px) {
+    margin: 0 100px;
   }
 }

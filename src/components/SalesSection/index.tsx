@@ -11,11 +11,11 @@ import { Price } from "@/components/SalesSection/components/Price";
 
 const SalesSection = () => (
   <section className={styles.section}>
-    <div>
+    <div className={styles.wrapper}>
       <div>
         <SliderSection />
       </div>
-      <div>
+      <div className={styles.inner_wrap}>
         <div className={styles.rating_wrap}>
           <figure className={styles.star}>
             <Image src={stars} alt="" />

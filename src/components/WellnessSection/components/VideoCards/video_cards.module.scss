@@ -7,6 +7,31 @@
     display: flex;
     padding: 0 18px;
   }
+
+  :global(.slick-slide) {
+    @media (min-width: 1440px) {
+      &:first-of-type {
+        padding-left: 100px;
+      }
+    }
+  }
+}
+
+.name {
+  position: absolute;
+  top: 15px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: #fff;
+  font-family: "Gilroy-SemiBold", serif;
+  font-size: 16px;
+  line-height: 19px;
+
+  @media (min-width: 1440px) {
+    font-size: 20px;
+    line-height: 24px;
+    top: 19px;
+  }
 }
 
 .card {
@@ -16,6 +41,12 @@
   overflow: hidden;
   margin: 0 7px;
   position: relative;
+
+  @media (min-width: 1440px) {
+    margin:  0 calc(40px / 2);
+    width: 280px !important;
+    height: 496px;
+  }
 }
 
 .video {
@@ -29,14 +60,23 @@
   height: 77px;
   bottom: 10px;
   left: 10px;
+
+  @media (min-width: 1440px) {
+    width: 80px;
+    height: 98px;
+  }
 }
 
 .title {
   font-family: "Gilroy-SemiBold", serif;
   font-size: 16px;
-  font-weight: 600;
   line-height: 19px;
   color: #fff;
+
+  @media (min-width: 1440px) {
+    font-size: 20px;
+    line-height: 24px;
+  }
 }
 
 .text {
@@ -45,6 +85,11 @@
   font-weight: 500;
   line-height: 14px;
   color: #fff;
+
+  @media (min-width: 1440px) {
+    font-size: 15px;
+    line-height: 18px;
+  }
 }
 
 .footer {
@@ -54,4 +99,8 @@
   background-color: #C10F27;
   padding: 8px 33px 17px 81px;
   width: 100%;
+
+  @media (min-width: 1440px) {
+    padding: 11px 42px 22px 104px;
+  }
 }

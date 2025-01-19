@@ -4,14 +4,26 @@
   padding: 30px 22px;
   width: 260px !important;
   min-height: 260px;
-  margin: calc(18px / 2);
+  margin: 0 calc(18px / 2);
   box-sizing: border-box;
+
+  @media (min-width: 1440px) {
+    width: 365px !important;
+    min-height: 365px;
+    margin: 0 calc(28px / 2);
+  }
 }
 
 .quotation_marks {
   width: 34px;
   height: 30px;
   margin-bottom: 10px;
+
+  @media (min-width: 1440px) {
+    width: 48px;
+    height: 42px;
+    margin-bottom: 18px;
+  }
 }
 
 .wrapper {
@@ -19,9 +31,21 @@
     padding: 0 !important;
   }
 
+  :global(.slick-slide) {
+    @media (min-width: 1440px) {
+      &:first-of-type {
+        padding-left: 100px;
+      }
+    }
+  }
+
   :global(.slick-track) {
     display: flex;
     padding: 0 18px;
+
+    @media (min-width: 1440px) {
+      padding: 0 100px;
+    }
   }
 }
 
@@ -29,6 +53,12 @@
   width: 106px;
   height: 20px;
   margin-right: 13px;
+
+  @media (min-width: 1440px) {
+    width: 150px;
+    height: 28px;
+    margin-right: 18px;
+  }
 }
 
 .text {
@@ -37,6 +67,12 @@
   font-weight: 300;
   line-height: 22px;
   margin-bottom: 21px;
+
+  @media (min-width: 1440px) {
+    font-size: 20px;
+    line-height: 26px;
+    margin-bottom: 30px;
+  }
 }
 
 .user_name {
@@ -44,6 +80,10 @@
   font-size: 14px;
   font-weight: 700;
   line-height: 22px;
+
+  @media (min-width: 1440px) {
+    font-size: 19px;
+  }
 }
 
 .rating_text {
@@ -51,6 +91,10 @@
   font-size: 12px;
   font-weight: 300;
   line-height: 26px;
+
+  @media (min-width: 1440px) {
+    font-size: 17px;
+  }
 }
 
 .card_title {
@@ -59,10 +103,19 @@
   font-weight: 500;
   line-height: 26px;
   margin-bottom: 10px;
+
+  @media (min-width: 1440px) {
+    font-size: 25px;
+    margin-bottom: 14px;
+  }
 }
 
 .rating_wrap {
   display: flex;
   align-items: center;
   margin-bottom: 13px;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 23px;
+  }
 }

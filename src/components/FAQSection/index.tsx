@@ -41,7 +41,7 @@ const faqData = [
 ];
 
 const FAQSection = () => (
-  <section className={styles.section}>
+  <section className={styles.section} id="FAQ">
     <div className={styles.wrapper}>
       <h2 className={styles.title}>Frequently Asked Questions</h2>
       <div>

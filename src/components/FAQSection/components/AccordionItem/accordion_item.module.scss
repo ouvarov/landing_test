@@ -19,6 +19,11 @@
     font-family: "Gilroy-Bold", serif;
     font-weight: 700;
     font-size: 20px;
+
+    @media (min-width: 1440px) {
+      font-size: 28px;
+      line-height: 28px;
+    }
   }
 }
 
@@ -47,6 +52,10 @@
 
   &__black {
     color: #5F5F5F;
+    @media (min-width: 1440px) {
+      font-size: 22px;
+      line-height: 26px;
+    }
   }
 }
 

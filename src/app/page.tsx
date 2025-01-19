@@ -1,4 +1,7 @@
+"use client";
+
 import { Roboto } from "next/font/google";
+import { useRef } from "react";
 
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -25,17 +28,30 @@ const roboto = Roboto({
 });
 
 export default function Home() {
+  const targetRef = useRef<HTMLDivElement>(null);
+
+  const scrollToElement = () => {
+    if (targetRef.current) {
+      targetRef.current?.scrollIntoView({
+        behavior: "smooth",
+        block: "center",
+      });
+    }
+  };
+
   return (
     <>
       <main className={roboto.variable}>
         <MarqueeHeader />
         <Header />
-        <TrySection />
+        <TrySection scrollToElement={scrollToElement} />
         <FeaturedSection />
         <ReviewsSection />
         <BenefitsSection />
         <WellnessSection />
-        <SalesSection />
+        <div ref={targetRef}>
+          <SalesSection />
+        </div>
         <MarqueeSection />
         <ScoopSection />
         <GroundedSection />

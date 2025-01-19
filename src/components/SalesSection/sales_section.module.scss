@@ -4,18 +4,48 @@
   overflow: hidden;
   width: 100%;
   box-sizing: border-box;
+
+  @media (min-width: 1440px) {
+    padding: 100px;
+  }
+}
+
+.wrapper {
+  @media (min-width: 1440px) {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.inner_wrap {
+  max-width: 420px;
+  margin: 0 auto;
+
+  @media (min-width: 1440px) {
+    max-width: 505px;
+  }
 }
 
 .rating_wrap {
   display: flex;
   align-items: center;
   margin-bottom: 13px;
+
+  @media (min-width: 1440px) {
+    margin-bottom: 13px;
+  }
 }
 
 .star {
   width: 81px;
   height: 15px;
   margin-right: 14px;
+
+  @media (min-width: 1440px) {
+    width: 137px;
+    height: 26px;
+    margin-right: 28px;
+  }
 }
 
 .rating {
@@ -27,6 +57,10 @@
   strong {
     font-weight: 700;
   }
+
+  @media (min-width: 1440px) {
+    font-size: 19px;
+  }
 }
 
 .title {
@@ -35,14 +69,25 @@
   line-height: 33px;
   text-transform: uppercase;
   margin-bottom: 12px;
+
+  @media (min-width: 1440px) {
+    font-size: 52px;
+    line-height: 64px;
+    margin-bottom: 18px;
+  }
 }
 
 .subtitle {
   color: #C10F27;
   font-family: "Gilroy-Bold", serif;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 1;
   margin-bottom: 4px;
+
+  @media (min-width: 1440px) {
+    font-size: 24px;
+    margin-bottom: 8px;
+  }
 }
 
 .text {
@@ -50,6 +95,12 @@
   font-size: 16px;
   line-height: 19px;
   margin-bottom: 12px;
+
+  @media (min-width: 1440px) {
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 18px;
+  }
 }
 
 .list_title_wrap {
@@ -63,6 +114,11 @@
   line-height: 21px;
   margin-right: 9px;
   position: relative;
+
+  @media (min-width: 1440px) {
+    font-size: 22px;
+    line-height: 26px;
+  }
 
   &:after {
     content: "";
@@ -97,6 +153,20 @@
   &:not(:last-of-type) {
     margin-bottom: 8px;
   }
+
+  @media (min-width: 1440px) {
+    font-size: 22px;
+    line-height: 26px;
+
+    &:after {
+      width: 10px;
+      height: 10px;
+    }
+
+    &:not(:last-of-type) {
+      margin-bottom: 17px;
+    }
+  }
 }
 
 .price_wrap {
@@ -110,4 +180,9 @@
 .list {
   padding: 18px 0;
   border-bottom: 1px solid #E2E2E2;
+
+  @media (min-width: 1440px) {
+    padding: 30px 0;
+    border-bottom: none;
+  }
 }

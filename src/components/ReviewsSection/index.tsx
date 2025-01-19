@@ -9,7 +9,9 @@ const ReviewsSection: FC = () => (
   <section className={styles.section}>
     <div className={styles.wrapper}>
       <h2 className={styles.title}>Reviews</h2>
-      <p className={styles.headline}>Real Results from Real People</p>
+      <p className={styles.headline}>
+        Real Results <br /> from Real People
+      </p>
     </div>
     <div>
       <Reviews />

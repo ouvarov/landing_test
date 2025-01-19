@@ -1,13 +1,35 @@
 .header {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   min-height: 56px;
   background-color: #fff;
-  max-width: 420px;
+  padding: 0 18px;
   margin: 0 auto;
+  position: relative;
+
+  @media (min-width: 1440px) {
+    padding: 0 100px;
+    min-height: 88px;
+  }
+}
+
+.link {
+  font-family: "Gilroy-SemiBold", serif;
+  font-size: 18px;
+  line-height: 24px;
+  margin-right: 48px;
+}
+
+.basket {
+  width: 38px;
+  height: 38px;
 }
 
 .figure {
-    width: 228px;
+  width: 228px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
 }

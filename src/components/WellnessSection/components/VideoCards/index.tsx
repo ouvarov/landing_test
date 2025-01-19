@@ -21,6 +21,7 @@ const VideoCards = () => {
     <div className={styles.wrapper}>
       <Slider {...settings}>
         <div className={styles.card}>
+          <h3 className={styles.name}>Chelsea Edward</h3>
           <video className={styles.video} loop autoPlay muted playsInline>
             <track default kind="captions" srcLang="en" />
             <source
@@ -39,6 +40,45 @@ const VideoCards = () => {
           </div>
         </div>
         <div className={styles.card}>
+          <h3 className={styles.name}>Chelsea Edward</h3>
+          <video className={styles.video} loop autoPlay muted playsInline>
+            <track default kind="captions" srcLang="en" />
+            <source
+              src={
+                "https://muscimol1.com.ua/cdn/shop/t/6/assets/m1-video-1.mp4?v=10010909435646270511736350276"
+              }
+              type="video/mp4"
+            />
+          </video>
+          <div className={styles.footer}>
+            <figure className={styles.figure}>
+              <Image src={image} alt="" />
+            </figure>
+            <p className={styles.title}> Brain enhancer</p>
+            <p className={styles.text}>(Amanita Muscaria)</p>
+          </div>
+        </div>
+        <div className={styles.card}>
+          <h3 className={styles.name}>Chelsea Edward</h3>
+          <video className={styles.video} loop autoPlay muted playsInline>
+            <track default kind="captions" srcLang="en" />
+            <source
+              src={
+                "https://muscimol1.com.ua/cdn/shop/t/6/assets/m1-video-1.mp4?v=10010909435646270511736350276"
+              }
+              type="video/mp4"
+            />
+          </video>
+          <div className={styles.footer}>
+            <figure className={styles.figure}>
+              <Image src={image} alt="" />
+            </figure>
+            <p className={styles.title}> Brain enhancer</p>
+            <p className={styles.text}>(Amanita Muscaria)</p>
+          </div>
+        </div>
+        <div className={styles.card}>
+          <h3 className={styles.name}>Chelsea Edward</h3>
           <video className={styles.video} loop autoPlay muted playsInline>
             <track default kind="captions" srcLang="en" />
             <source

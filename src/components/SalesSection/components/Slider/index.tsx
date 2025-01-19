@@ -27,7 +27,6 @@ const SliderSection = () => {
       );
     },
     dots: true,
-    // dotsClass: "slick-dots slick-thumb",
     infinite: false,
     speed: 500,
     centerMode: true,
