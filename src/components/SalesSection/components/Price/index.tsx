@@ -10,7 +10,11 @@ import shipping from "@/assets/icons/shipping.svg";
 
 import styles from "./price.module.scss";
 
-const Price: FC = () => {
+type Props = {
+  handleAddCount: () => void;
+};
+
+const Price: FC<Props> = ({ handleAddCount }) => {
   const [activePrice, setActivePrice] = useState("popular");
 
   const handleOnClick = (type: string) => {
@@ -91,7 +95,9 @@ const Price: FC = () => {
       <button className={styles.transparent_button} type="button">
         Buy once for $79
       </button>
-      <button className={styles.button}>Add to cart - $49.5 </button>
+      <button className={styles.button} onClick={handleAddCount}>
+        Add to cart - $49.5{" "}
+      </button>
 
       <div className={styles.description_wrapper}>
         <div className={styles.description_wrap}>

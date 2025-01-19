@@ -1,11 +1,19 @@
 .section {
   background-color: #F6EFE5;
   padding: 0 18px;
+
+  @media (min-width: 1440px) {
+    padding: 0 100px;
+  }
 }
 
 .wrapper {
   max-width: 420px;
   margin: 0 auto;
+
+  @media (min-width: 1440px) {
+    max-width: 100%;
+  }
 }
 
 .title {
@@ -15,4 +23,10 @@
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 35px;
+
+  @media (min-width: 1440px) {
+    font-size: 62px;
+    line-height: 74px;
+    margin-bottom: 18px;
+  }
 }

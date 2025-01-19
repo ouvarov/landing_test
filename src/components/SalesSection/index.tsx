@@ -8,8 +8,13 @@ import Image from "next/image";
 import styles from "./sales_section.module.scss";
 import { FAQ } from "./components/FAQ";
 import { Price } from "@/components/SalesSection/components/Price";
+import { FC } from "react";
 
-const SalesSection = () => (
+type Props = {
+  handleAddCount: () => void;
+};
+
+const SalesSection: FC<Props> = ({ handleAddCount }) => (
   <section className={styles.section}>
     <div className={styles.wrapper}>
       <div>
@@ -43,7 +48,7 @@ const SalesSection = () => (
         </ul>
 
         <div className={styles.price_wrap}>
-          <Price />
+          <Price handleAddCount={handleAddCount} />
         </div>
 
         <div className={styles.faq_wrap}>

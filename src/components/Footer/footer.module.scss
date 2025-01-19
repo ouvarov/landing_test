@@ -1,11 +1,19 @@
 .footer {
   background-color: #C10F27;
   padding: 25px 18px 59px;
+
+  @media (min-width: 1440px) {
+    padding: 43px 100px 34px;
+  }
 }
 
 .wrapper {
   max-width: 420px;
   margin: 0 auto;
+
+  @media (min-width: 1440px) {
+    max-width: 100%;
+  }
 }
 
 .logo_wrap {
@@ -28,6 +36,10 @@
   line-height: 14px;
   margin: 0 27px 20px 0;
   flex-shrink: 0;
+
+  @media (min-width: 1440px) {
+    margin: 0  0 0 24px;
+  }
 }
 
 .link_wrap {
@@ -38,6 +50,12 @@
   overflow: hidden;
   margin-bottom: 20px;
   width: 100%;
+
+  @media (min-width: 1440px) {
+    margin: 0;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
 }
 
 .text {
@@ -53,19 +71,50 @@
   margin-right: 16px;
 }
 
+.link_wrapper {
+  @media (min-width: 1440px) {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+}
+
 .social_icon_wrap {
   display: flex;
   align-items: center;
   margin: 40px 0;
+
+  @media (min-width: 1440px) {
+    margin: 0;
+  }
 }
 
 .icon {
   width: 26px;
   height: 26px;
   margin-right: 12px;
+
+  @media (min-width: 1440px) {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.logo_wrapper {
+  @media (min-width: 1440px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 64px;
+  }
 }
 
 .logo {
   height: 26px;
   width: 285px;
+
+  @media (min-width: 1440px) {
+    height: 24px;
+    width: 262px;
+  }
 }

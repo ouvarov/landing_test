@@ -20,7 +20,7 @@ const socialLinks: Array<{ link: string; icon: string }> = [
 const Footer = () => (
   <footer className={styles.footer}>
     <div className={styles.wrapper}>
-      <div>
+      <div className={styles.logo_wrapper}>
         <div className={styles.logo_wrap}>
           <figure className={styles.icon}>
             <Image src={icon} alt="logo" />
@@ -39,7 +39,7 @@ const Footer = () => (
           ))}
         </div>
       </div>
-      <div>
+      <div className={styles.link_wrapper}>
         <div className={styles.link_wrap}>
           <a
             className={styles.link}

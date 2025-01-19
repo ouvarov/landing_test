@@ -1,7 +1,7 @@
 "use client";
 
 import { Roboto } from "next/font/google";
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -20,6 +20,7 @@ import { WellnessSection } from "@/components/WellnessSection";
 
 import "@/styles/reset.css";
 import { SalesSection } from "@/components/SalesSection";
+import { COUNT_TABLES } from "@/constants";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -29,6 +30,9 @@ const roboto = Roboto({
 
 export default function Home() {
   const targetRef = useRef<HTMLDivElement>(null);
+  const [count, setCount] = useState(
+    Number(localStorage.getItem(COUNT_TABLES)) || 0,
+  );
 
   const scrollToElement = () => {
     if (targetRef.current) {
@@ -39,18 +43,22 @@ export default function Home() {
     }
   };
 
+  const handleAddCount = () => {
+    setCount((prevState) => prevState + 1);
+  };
+
   return (
     <>
       <main className={roboto.variable}>
         <MarqueeHeader />
-        <Header />
+        <Header count={count} />
         <TrySection scrollToElement={scrollToElement} />
         <FeaturedSection />
         <ReviewsSection />
         <BenefitsSection />
         <WellnessSection />
         <div ref={targetRef}>
-          <SalesSection />
+          <SalesSection handleAddCount={handleAddCount} />
         </div>
         <MarqueeSection />
         <ScoopSection />

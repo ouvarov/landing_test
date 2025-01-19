@@ -1,7 +1,7 @@
 .title {
   font-family: "Gilroy-SemiBold", serif;
   font-size: 18px;
-  line-height: 18px;
+  line-height: 1;
   text-align: left;
   padding-right: 60px;
   position: relative;
@@ -9,9 +9,17 @@
   width: 100%;
   transition: .3s;
 
+  @media (min-width: 1440px) {
+    font-size: 24px;
+  }
+
   &__active {
     color: #C10F27;
     margin-bottom: 18px;
+
+    @media (min-width: 1440px) {
+      margin-bottom: 26px;
+    }
   }
 
   &__black {
@@ -37,13 +45,23 @@
   &__active {
     transform: translateY(-50%) rotate(180deg);
   }
+
+
+  @media (min-width: 1440px) {
+    width: 24px;
+    height: 12px;
+  }
 }
 
 .text {
   font-family: "Gilroy-Medium", serif;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 1;
   color: #666666;
+
+  @media (min-width: 1440px) {
+    font-size: 22px;
+  }
 
   ul {
     list-style-type: disc;
@@ -65,5 +83,13 @@
 
   &:not(:last-of-type) {
     margin-bottom: 18px;
+  }
+
+  @media (min-width: 1440px) {
+    padding-bottom: 32px;
+
+    &:not(:last-of-type) {
+      margin-bottom: 32px;
+    }
   }
 }
