@@ -8,6 +8,11 @@
   }
 }
 
+.box {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 .section {
   @media (min-width: 1440px) {
     background: #C10F27;

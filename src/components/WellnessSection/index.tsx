@@ -7,7 +7,7 @@ const WellnessSection: FC = () => (
   <section className={styles.section}>
     <h2 className={styles.title}>Be Part of Our Wellness Tribe</h2>
     <p className={styles.text}>Trusted by over 50,000+ People</p>
-    <div>
+    <div className={styles.box}>
       <VideoCards />
     </div>
   </section>
