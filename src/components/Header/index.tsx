@@ -1,6 +1,7 @@
 "use client";
 
 import { FC, useState } from "react";
+import { scroller } from "react-scroll";
 import classNames from "classnames";
 import Image from "next/image";
 
@@ -11,9 +12,10 @@ import styles from "./header.module.scss";
 
 type Props = {
   count: number;
+  handleShowCheckout: () => void;
 };
 
-const Header: FC<Props> = ({ count }) => {
+const Header: FC<Props> = ({ count, handleShowCheckout }) => {
   const [isCheckBurger, setIsCheckBurger] = useState(false);
 
   const handleOnClick = () => {
@@ -39,25 +41,59 @@ const Header: FC<Props> = ({ count }) => {
             [styles.nav__active]: isCheckBurger,
           })}
         >
-          <a onClick={handleOnClick} className={styles.link} href="#Science">
+          <button
+            type="button"
+            onClick={() => {
+              handleOnClick();
+              scroller.scrollTo("Science", {
+                duration: 1500,
+                smooth: true,
+              });
+            }}
+            className={styles.link}
+          >
             Science
-          </a>
-          <a onClick={handleOnClick} className={styles.link} href="#AboutUs">
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              handleOnClick();
+              scroller.scrollTo("AboutUs", {
+                duration: 1500,
+                smooth: true,
+              });
+            }}
+            className={styles.link}
+          >
             About Us
-          </a>
-          <a onClick={handleOnClick} className={styles.link} href="#FAQ">
+          </button>
+          <button
+            type="button"
+            onClick={() => {
+              handleOnClick();
+              scroller.scrollTo("FAQ", {
+                duration: 1500,
+                smooth: true,
+              });
+            }}
+            className={styles.link}
+          >
             FAQ
-          </a>
+          </button>
         </nav>
       </div>
       <figure className={styles.figure}>
         <Image src={logo} alt="" />
       </figure>
 
-      <div className={styles.basket}>
+      <button
+        type="button"
+        onClick={handleShowCheckout}
+        className={styles.basket}
+      >
         <Image src={basket} alt="" />
         {!!count && <div className={styles.count}>{count}</div>}
-      </div>
+      </button>
     </header>
   );
 };

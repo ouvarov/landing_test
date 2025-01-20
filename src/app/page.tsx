@@ -1,7 +1,7 @@
 "use client";
 
 import { Roboto } from "next/font/google";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 import { Footer } from "@/components/Footer";
 import { Header } from "@/components/Header";
@@ -21,6 +21,7 @@ import { WellnessSection } from "@/components/WellnessSection";
 import "@/styles/reset.css";
 import { SalesSection } from "@/components/SalesSection";
 import { COUNT_TABLES } from "@/constants";
+import { Checkout } from "@/components/Checkout";
 
 const roboto = Roboto({
   subsets: ["latin"],
@@ -30,9 +31,8 @@ const roboto = Roboto({
 
 export default function Home() {
   const targetRef = useRef<HTMLDivElement>(null);
-  const [count, setCount] = useState(
-    Number(localStorage.getItem(COUNT_TABLES)) || 0,
-  );
+  const [count, setCount] = useState(0);
+  const [isShowCheckout, setIsShowCheckout] = useState(false);
 
   const scrollToElement = () => {
     if (targetRef.current) {
@@ -43,31 +43,44 @@ export default function Home() {
     }
   };
 
+  const handleShowCheckout = () => {
+    setIsShowCheckout((prevState) => !prevState);
+  };
+
   const handleAddCount = () => {
     setCount((prevState) => prevState + 1);
   };
 
+  useEffect(() => {
+    if (Number(localStorage.getItem(COUNT_TABLES))) {
+      setCount(Number(localStorage.getItem(COUNT_TABLES)));
+    }
+  }, []);
+
   return (
-    <>
-      <main className={roboto.variable}>
-        <MarqueeHeader />
-        <Header count={count} />
-        <TrySection scrollToElement={scrollToElement} />
-        <FeaturedSection />
-        <ReviewsSection />
-        <BenefitsSection />
-        <WellnessSection />
-        <div ref={targetRef}>
-          <SalesSection handleAddCount={handleAddCount} />
-        </div>
-        <MarqueeSection />
-        <ScoopSection />
-        <GroundedSection />
-        <HowWeAreSection />
-        <FAQSection />
-        <AppSection />
-        <Footer />
-      </main>
-    </>
+    <main className={roboto.variable}>
+      <Checkout
+        handleOnClose={handleShowCheckout}
+        count={count}
+        isShowCheckout={isShowCheckout}
+      />
+      <MarqueeHeader />
+      <Header count={count} handleShowCheckout={handleShowCheckout} />
+      <TrySection scrollToElement={scrollToElement} />
+      <FeaturedSection />
+      <ReviewsSection />
+      <BenefitsSection />
+      <WellnessSection />
+      <div ref={targetRef}>
+        <SalesSection handleAddCount={handleAddCount} />
+      </div>
+      <MarqueeSection />
+      <ScoopSection />
+      <GroundedSection />
+      <HowWeAreSection />
+      <FAQSection />
+      <AppSection />
+      <Footer />
+    </main>
   );
 }

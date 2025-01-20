@@ -4,9 +4,11 @@ import styles from "./benefits_section.module.scss";
 import Image from "next/image";
 
 import bg from "./bg.png";
+import { Element } from "react-scroll";
 
 const BenefitsSection: FC = () => (
-  <section className={styles.section} id="SAboutUs">
+  <section className={styles.section}>
+    <Element name="AboutUs" />
     <div className={styles.wrap}>
       <h2 className={styles.title}>Benefits of daily use</h2>
       <p className={styles.text}>

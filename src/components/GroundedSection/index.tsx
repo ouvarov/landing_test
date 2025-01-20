@@ -3,9 +3,11 @@ import Image from "next/image";
 import mushroom from "./mushroom.png";
 
 import styles from "./grounded_section.module.scss";
+import { Element } from "react-scroll";
 
 const GroundedSection = () => (
-  <section className={styles.section} id="Science">
+  <section className={styles.section}>
+    <Element name="Science" />
     <div className={styles.wrapper}>
       <h2 className={styles.title}>Grounded in Nature, Proven by Science</h2>
       <p className={styles.subtitle}>

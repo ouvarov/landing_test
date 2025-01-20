@@ -8,6 +8,7 @@ import image2 from "./images/image2.png";
 import image3 from "./images/image3.png";
 
 import styles from "./users_card.module.scss";
+import { calculateSlidePercentage } from "@/helpers/calculateSlidePercentage";
 
 const SLIDES = 3;
 const UserCard: FC = () => {
@@ -20,14 +21,6 @@ const UserCard: FC = () => {
     slidesToScroll: 1,
     variableWidth: true,
     afterChange: (current) => setActiveSlide(current),
-  };
-
-  const calculateSlidePercentage = (
-    activeSlideIndex: number,
-    totalSlides: number,
-  ) => {
-    if (totalSlides === 0) return 0; // Защита от деления на 0
-    return ((activeSlideIndex + 1) / totalSlides) * 100;
   };
 
   return (

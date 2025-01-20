@@ -1,4 +1,5 @@
 import { AccordionItem } from "@/components/FAQSection/components/AccordionItem";
+import { Element } from "react-scroll";
 
 import styles from "./faq_sectiom.module.scss";
 
@@ -41,7 +42,8 @@ const faqData = [
 ];
 
 const FAQSection = () => (
-  <section className={styles.section} id="FAQ">
+  <section className={styles.section}>
+    <Element name="FAQ" />
     <div className={styles.wrapper}>
       <h2 className={styles.title}>Frequently Asked Questions</h2>
       <div>
